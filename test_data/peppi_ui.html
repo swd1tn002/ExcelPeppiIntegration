@@ -1,0 +1,362 @@
+<html>
+
+  <head>
+    <title>Peppi - Test site</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-css-1.3.4.min.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("select").change(function () {
+          let $element = $(this);
+          setTimeout(function () {
+            $element.parents("tr").find(".status").html('<span class="status-badge status-completed">OK</span>');
+          }, 1000);
+        })
+      });
+    </script>
+  </head>
+
+  <body>
+    <h1>Peppi test site</h1>
+    <table id="evaluation" class="table-hover leveled-table-e sort-before">
+      <thead>
+        <tr>
+          <th class="  slim  th-icon-e title-fill-e"></th>
+          <th class="slim tipover-e" data-content="Järjestysluku" data-placement="top" data-original-title="" title="">#
+          </th>
+          <th class="sort  tipover-e tipover-e short title-fill-e" data-content="Status" data-placement="top"
+            colspan="1" data-original-title="" title="">
+            Status
+          </th>
+
+          <th class="  slim  th-icon-e"></th>
+          <th class="sort asc tipover-e " data-content="Name" data-placement="top" colspan="1" data-original-title=""
+            title="">
+            Name
+          </th>
+
+          <th class="sort  tipover-e medium num-e" data-content="Student number" data-placement="top" colspan="1"
+            data-original-title="" title="">
+            Student Number
+          </th>
+
+          <th class="sort  tipover-e short num-e" data-content="Credits" data-placement="top" colspan="1"
+            data-original-title="" title="">
+            Cr
+          </th>
+
+
+          <th class="sort  tipover-e short" data-content="Grade" data-placement="top" colspan="1" data-original-title=""
+            title="">
+            Grade
+          </th>
+
+          <th class="sort  tipover-e num-e" data-content="Date of completion = reporting date" data-placement="top"
+            colspan="1" data-original-title="" title="">
+            Date of completion
+          </th>
+
+          <th class="sort  tipover-e " data-content="Assessor" data-placement="top" colspan="2" data-original-title=""
+            title="">
+            Assessor
+          </th>
+
+
+          <th class="sort  tipover-e medium num-e" data-content="Saving date and time" data-placement="top" colspan="1"
+            data-original-title="" title="">
+            Saved
+          </th>
+
+
+          <th class="row-actions-e" style="min-width: 1px; width: 1px;"></th>
+        </tr>
+      </thead>
+      <tbody>
+
+
+
+        <tr data-state="open" data-entitlement-key="12345">
+          <td>
+          </td>
+          <td>
+          </td>
+          </td>
+          <td class="status">
+            <span class="status-badge status-completed"><i class="fa fa-check-circle"></i></span>
+          </td>
+          <td>
+          </td>
+          <td>Alice</td>
+          <td class="num-e">
+            12345
+          </td>
+          <td class="num-e" style="width:7em;"></td>
+          <td class="grade text-center mandatory"> <select name="accomplishment.grade.id" data-current="NULL"
+              autocomplete="off">
+              <option value="NULL">-</option>
+              <option value="11654">1</option>
+              <option value="11655">2</option>
+              <option value="11656">3</option>
+              <option value="11657">4</option>
+              <option value="11658">5</option>
+              <option value="11659">0</option>
+              <option value="11660">H</option>
+              <option value="78321">M</option>
+            </select> </td>
+          <td class="num-e"></td>
+          <td> </td>
+          <td class="slim assessed-by-btn"></td>
+          <td class="long modifiedat num-e"></td>
+          <td class="text-right">
+          </td>
+        </tr>
+
+
+        <tr data-state="open" data-entitlement-key="23456">
+          <td>
+          </td>
+          <td>
+          </td>
+          </td>
+          <td class="status">
+            <span class="tipover-e"
+              data-original-title="" title="">
+              <span class="status-badge status-info no-assessment"><i class="fa fa-info"></i></span>
+            </span>
+          </td>
+          <td>
+          </td>
+          <td>Bob</td>
+          <td class="num-e">
+            23456
+          </td>
+          <td class="num-e" style="width:7em;"></td>
+          <td class="grade text-center mandatory"> <select name="accomplishment.grade.id" data-current="NULL"
+              autocomplete="off">
+              <option value="NULL">-</option>
+              <option value="11654">1</option>
+              <option value="11655">2</option>
+              <option value="11656">3</option>
+              <option value="11657">4</option>
+              <option value="11658">5</option>
+              <option value="11659">0</option>
+              <option value="11660">H</option>
+              <option value="78321">M</option>
+            </select> </td>
+          <td class="num-e"></td>
+          <td> </td>
+          <td class="slim assessed-by-btn"></td>
+          <td class="long modifiedat num-e"></td>
+          <td class="text-right">
+          </td>
+        </tr>
+
+
+        <tr data-state="open" data-entitlement-key="34567">
+          <td>
+          </td>
+          <td>
+          </td>
+          </td>
+          <td class="status">
+            <span class="tipover-e"
+              data-original-title="" title="">
+              <span class="status-badge status-info no-assessment"><i class="fa fa-info"></i></span>
+            </span>
+          </td>
+          <td>
+          </td>
+          <td>Cecilia</td>
+          <td class="num-e">
+            34567
+          </td>
+          <td class="num-e" style="width:7em;"></td>
+          <td class="grade text-center mandatory"> <select name="accomplishment.grade.id" data-current="NULL"
+              autocomplete="off">
+              <option value="NULL">-</option>
+              <option value="11654">1</option>
+              <option value="11655">2</option>
+              <option value="11656">3</option>
+              <option value="11657">4</option>
+              <option value="11658">5</option>
+              <option value="11659">0</option>
+              <option value="11660">H</option>
+              <option value="78321">M</option>
+            </select> </td>
+          <td class="num-e"></td>
+          <td> </td>
+          <td class="slim assessed-by-btn"></td>
+          <td class="long modifiedat num-e"></td>
+          <td class="text-right">
+          </td>
+        </tr>
+
+
+
+        <tr data-state="open" data-entitlement-key="45678">
+          <td>
+          </td>
+          <td>
+          </td>
+          </td>
+          <td class="status">
+            <span class="tipover-e"
+              data-original-title="" title="">
+              <span class="status-badge status-info no-assessment"><i class="fa fa-info"></i></span>
+            </span>
+          </td>
+          <td>
+          </td>
+          <td>David</td>
+          <td class="num-e">
+            45678
+          </td>
+          <td class="num-e" style="width:7em;"></td>
+          <td class="grade text-center mandatory"> <select name="accomplishment.grade.id" data-current="NULL"
+              autocomplete="off">
+              <option value="NULL">-</option>
+              <option value="11654">1</option>
+              <option value="11655">2</option>
+              <option value="11656">3</option>
+              <option value="11657">4</option>
+              <option value="11658">5</option>
+              <option value="11659">0</option>
+              <option value="11660">H</option>
+              <option value="78321">M</option>
+            </select> </td>
+          <td class="num-e"></td>
+          <td> </td>
+          <td class="slim assessed-by-btn"></td>
+          <td class="long modifiedat num-e"></td>
+          <td class="text-right">
+          </td>
+        </tr>
+
+
+
+        <tr data-state="open" data-entitlement-key="56789">
+          <td>
+          </td>
+          <td>
+          </td>
+          </td>
+          <td class="status">
+            <span class="tipover-e"
+              data-original-title="" title="">
+              <span class="status-badge status-info no-assessment"><i class="fa fa-info"></i></span>
+            </span>
+          </td>
+          <td>
+          </td>
+          <td>Eve</td>
+          <td class="num-e">
+            56789
+          </td>
+          <td class="num-e" style="width:7em;"></td>
+          <td class="grade text-center mandatory"> <select name="accomplishment.grade.id" data-current="NULL"
+              autocomplete="off">
+              <option value="NULL">-</option>
+              <option value="11654">1</option>
+              <option value="11655">2</option>
+              <option value="11656">3</option>
+              <option value="11657">4</option>
+              <option value="11658">5</option>
+              <option value="11659">0</option>
+              <option value="11660">H</option>
+              <option value="78321">M</option>
+            </select> </td>
+          <td class="num-e"></td>
+          <td> </td>
+          <td class="slim assessed-by-btn"></td>
+          <td class="long modifiedat num-e"></td>
+          <td class="text-right">
+          </td>
+        </tr>
+
+
+
+        <tr data-state="open" data-entitlement-key="67890">
+          <td>
+          </td>
+          <td>
+          </td>
+          </td>
+          <td class="status">
+            <span class="tipover-e"
+              data-original-title="" title="">
+              <span class="status-badge status-info no-assessment"><i class="fa fa-info"></i></span>
+            </span>
+          </td>
+          <td>
+          </td>
+          <td>Frank</td>
+          <td class="num-e">
+            67890
+          </td>
+          <td class="num-e" style="width:7em;"></td>
+          <td class="grade text-center mandatory"> <select name="accomplishment.grade.id" data-current="NULL"
+              autocomplete="off">
+              <option value="NULL">-</option>
+              <option value="11654">1</option>
+              <option value="11655">2</option>
+              <option value="11656">3</option>
+              <option value="11657">4</option>
+              <option value="11658">5</option>
+              <option value="11659">0</option>
+              <option value="11660">H</option>
+              <option value="78321">M</option>
+            </select> </td>
+          <td class="num-e"></td>
+          <td> </td>
+          <td class="slim assessed-by-btn"></td>
+          <td class="long modifiedat num-e"></td>
+          <td class="text-right">
+          </td>
+        </tr>
+
+
+
+        <tr data-state="open" data-entitlement-key="78901">
+          <td>
+          </td>
+          <td>
+          </td>
+          </td>
+          <td class="status">
+            <span class="tipover-e"
+              data-original-title="" title="">
+              <span class="status-badge status-info no-assessment"><i class="fa fa-info"></i></span>
+            </span>
+          </td>
+          <td>
+          </td>
+          <td>Extra</td>
+          <td class="num-e">
+            78901
+          </td>
+          <td class="num-e" style="width:7em;"></td>
+          <td class="grade text-center mandatory"> <select name="accomplishment.grade.id" data-current="NULL"
+              autocomplete="off">
+              <option value="NULL">-</option>
+              <option value="11654">1</option>
+              <option value="11655">2</option>
+              <option value="11656">3</option>
+              <option value="11657">4</option>
+              <option value="11658">5</option>
+              <option value="11659">0</option>
+              <option value="11660">H</option>
+              <option value="78321">M</option>
+            </select> </td>
+          <td class="num-e"></td>
+          <td> </td>
+          <td class="slim assessed-by-btn"></td>
+          <td class="long modifiedat num-e"></td>
+          <td class="text-right">
+          </td>
+      </tbody>
+    </table>
+  </body>
+</html>
